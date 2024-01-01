@@ -1,6 +1,6 @@
 {
     "name": "release-it-webhook",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Webhook plugin for release-it.",
     "repository": "https://github.com/pchalupa/release-it-webhook",
     "bugs": {
