@@ -1,23 +1,35 @@
-# Webhook plugin for release-it
+# Release-it Webhook
 
-This plugin call provided webhook url. Body if the request includes: **name**, **version** and **changelog**.
+Plugin for [release-it](https://github.com/release-it/release-it) which makes a request against provided webhook url.
 
 ### Install
 
-```
+```bash
 npm install --save-dev release-it-webhook
 ```
 
 ### Configuration
 
-In [release-it](https://github.com/release-it/release-it) config:
+In [release-it](https://github.com/release-it/release-it/blob/main/docs/plugins.md#using-a-plugin) plugins config:
 
-```
+```json
 "plugins": {
   "release-it-webhook": {
 	"webhook": {
 		"url": "https://hooks.slack.com/triggers/...."
 	}
   }
+}
+```
+
+### Webhook
+
+The request body contain this payload:
+
+```json
+{
+	"name": "..."
+	"version": "..."
+	"changelog": "..."
 }
 ```
