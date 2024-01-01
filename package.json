@@ -1,0 +1,54 @@
+{
+    "name": "release-it-webhook",
+    "version": "0.0.0",
+    "description": "Webhook plugin for release-it.",
+    "keywords": [
+        "release",
+        "release-it",
+        "release-it-plugin",
+        "webhook"
+    ],
+    "author": {
+        "name": "Petr Chalupa",
+        "email": "chalupa.petr93@gmail.com",
+        "url": "https://github.com/pchalupa"
+    },
+    "license": "MIT",
+    "type": "module",
+    "main": "./dist/index.js",
+    "exports": {
+        ".": "./dist/index.js",
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "./dist/index.js"
+    ],
+    "scripts": {
+        "dev": "tsup-node --watch",
+        "lint": "eslint --ext .ts src",
+        "ts:check": "tsc --noEmit",
+        "build": "tsup-node",
+        "release": "release-it --dry-run"
+    },
+    "devDependencies": {
+        "@release-it/conventional-changelog": "^8.0.1",
+        "@types/node": "^20.10.6",
+        "@typescript-eslint/eslint-plugin": "^6.16.0",
+        "@typescript-eslint/parser": "^6.16.0",
+        "eslint": "^8.56.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-config-xo": "^0.43.1",
+        "eslint-config-xo-typescript": "^1.0.1",
+        "eslint-plugin-prettier": "^5.1.2",
+        "prettier": "^3.1.1",
+        "release-it": "^17.0.1",
+        "tsup": "^8.0.1",
+        "typescript": "^5.3.3"
+    },
+    "peerDependencies": {
+        "release-it": "^17.0.1"
+    },
+    "engines": {
+        "node": "<=18"
+    }
+}
