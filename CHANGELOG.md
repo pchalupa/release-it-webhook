@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.3](https://github.com/pchalupa/release-it-webhook/compare/0.0.2...0.0.3) (2024-01-01)
+
+
+### Chores
+
+* update release-it version range ([3a228ac](https://github.com/pchalupa/release-it-webhook/commit/3a228ac820752a8ed540e482a2b6ce9a35739d58))
+
 ## [0.0.2](https://github.com/pchalupa/release-it-webhook/compare/0.0.1...0.0.2) (2024-01-01)
 
 
