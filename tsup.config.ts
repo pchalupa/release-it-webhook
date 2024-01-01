@@ -5,6 +5,6 @@ export default defineConfig((options: Options) => ({
     format: 'esm',
     target: 'es2022',
     platform: 'node',
-    sourcemap: true,
+    minify: !options.watch,
     ...options,
 }));

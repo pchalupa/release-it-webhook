@@ -2,6 +2,10 @@
     "name": "release-it-webhook",
     "version": "0.0.0",
     "description": "Webhook plugin for release-it.",
+    "repository": "https://github.com/pchalupa/release-it-webhook",
+    "bugs": {
+        "url": "https://github.com/pchalupa/release-it-webhook/issues"
+    },
     "keywords": [
         "release",
         "release-it",
@@ -14,21 +18,21 @@
         "url": "https://github.com/pchalupa"
     },
     "license": "MIT",
+    "homepage": "https://github.com/pchalupa/release-it-webhook#readme",
     "type": "module",
-    "main": "./dist/index.js",
     "exports": {
-        ".": "./dist/index.js",
+        ".": "./index.js",
         "./package.json": "./package.json"
     },
     "files": [
-        "./dist/index.js"
+        "./index.js"
     ],
     "scripts": {
         "dev": "tsup-node --watch",
         "lint": "eslint --ext .ts src",
         "ts:check": "tsc --noEmit",
         "build": "tsup-node",
-        "release": "release-it --dry-run"
+        "release": "release-it"
     },
     "devDependencies": {
         "@release-it/conventional-changelog": "^8.0.1",
