@@ -5,6 +5,5 @@ export default defineConfig((options: Options) => ({
     format: 'esm',
     target: 'es2022',
     platform: 'node',
-    minify: !options.watch,
     ...options,
 }));
