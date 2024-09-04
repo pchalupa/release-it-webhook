@@ -38,7 +38,7 @@
         "@release-it/conventional-changelog": "^8.0.1",
         "@types/node": "^22.5.2",
         "@typescript-eslint/eslint-plugin": "^7.0.0",
-        "@typescript-eslint/parser": "^6.16.0",
+        "@typescript-eslint/parser": "^8.4.0",
         "eslint": "^8.56.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-config-xo": "^0.45.0",
