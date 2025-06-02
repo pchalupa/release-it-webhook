@@ -6,12 +6,7 @@
 	"bugs": {
 		"url": "https://github.com/pchalupa/release-it-webhook/issues"
 	},
-	"keywords": [
-		"release",
-		"release-it",
-		"release-it-plugin",
-		"webhook"
-	],
+	"keywords": ["release", "release-it", "release-it-plugin", "webhook"],
 	"author": {
 		"name": "Petr Chalupa",
 		"email": "chalupa.petr93@gmail.com",
@@ -22,9 +17,7 @@
 	"type": "module",
 	"main": "./index.js",
 	"types": "./index.d.ts",
-	"files": [
-		"./index.js"
-	],
+	"files": ["./index.js"],
 	"scripts": {
 		"dev": "tsup-node --watch",
 		"lint": "biome check",
