@@ -15,10 +15,8 @@
 	"license": "MIT",
 	"homepage": "https://github.com/pchalupa/release-it-webhook#readme",
 	"type": "module",
-	"exports": {
-		".": "./index.js",
-		"./package.json": "./package.json"
-	},
+	"main": "./index.js",
+	"types": "./index.d.ts",
 	"files": ["./index.js"],
 	"scripts": {
 		"dev": "tsup-node --watch",
