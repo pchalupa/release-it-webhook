@@ -1,44 +1,44 @@
 {
-    "git": {
-        "commitMessage": "chore: release ${version}",
-        "requireBranch": "main",
-        "requireCleanWorkingDir": true
-    },
-    "github": {
-        "release": true,
-        "releaseName": "${version}"
-    },
-    "plugins": {
-        "@release-it/conventional-changelog": {
-            "header": "# Changelog",
-            "preset": {
-                "name": "conventionalcommits",
-                "types": [
-                    {
-                        "type": "feat",
-                        "section": "Features"
-                    },
-                    {
-                        "type": "fix",
-                        "section": "Bug Fixes"
-                    },
-                    {
-                        "type": "chore",
-                        "section": "Chores"
-                    },
-                    { "type": "ci", "section": "Continuous Integration" },
-                    { "type": "docs", "section": "Documentation" },
-                    { "type": "refactor", "section": "Code Refactoring" },
-                    { "type": "test", "section": "Tests" },
-                    { "type": "revert", "section": "Reverts" }
-                ]
-            },
-            "infile": "CHANGELOG.md"
-        }
-    },
-    "hooks": {
-        "before:init": ["npm run lint", "npm run ts:check"],
-        "after:bump": ["npm run build", "cp dist/index.js index.js"],
-        "after:release": "rm index.js"
-    }
+	"git": {
+		"commitMessage": "chore: release ${version}",
+		"requireBranch": "main",
+		"requireCleanWorkingDir": true
+	},
+	"github": {
+		"release": true,
+		"releaseName": "${version}"
+	},
+	"plugins": {
+		"@release-it/conventional-changelog": {
+			"header": "# Changelog",
+			"preset": {
+				"name": "conventionalcommits",
+				"types": [
+					{
+						"type": "feat",
+						"section": "Features"
+					},
+					{
+						"type": "fix",
+						"section": "Bug Fixes"
+					},
+					{
+						"type": "chore",
+						"section": "Chores"
+					},
+					{ "type": "ci", "section": "Continuous Integration" },
+					{ "type": "docs", "section": "Documentation" },
+					{ "type": "refactor", "section": "Code Refactoring" },
+					{ "type": "test", "section": "Tests" },
+					{ "type": "revert", "section": "Reverts" }
+				]
+			},
+			"infile": "CHANGELOG.md"
+		}
+	},
+	"hooks": {
+		"before:init": ["npm run lint", "npm run ts:check"],
+		"after:bump": ["npm run build", "cp dist/index.js index.js"],
+		"after:release": "rm index.js"
+	}
 }

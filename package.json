@@ -1,58 +1,45 @@
 {
-    "name": "release-it-webhook",
-    "version": "0.0.5",
-    "description": "Webhook plugin for release-it",
-    "repository": "https://github.com/pchalupa/release-it-webhook",
-    "bugs": {
-        "url": "https://github.com/pchalupa/release-it-webhook/issues"
-    },
-    "keywords": [
-        "release",
-        "release-it",
-        "release-it-plugin",
-        "webhook"
-    ],
-    "author": {
-        "name": "Petr Chalupa",
-        "email": "chalupa.petr93@gmail.com",
-        "url": "https://github.com/pchalupa"
-    },
-    "license": "MIT",
-    "homepage": "https://github.com/pchalupa/release-it-webhook#readme",
-    "type": "module",
-    "exports": {
-        ".": "./index.js",
-        "./package.json": "./package.json"
-    },
-    "files": [
-        "./index.js"
-    ],
-    "scripts": {
-        "dev": "tsup-node --watch",
-        "lint": "eslint --ext .ts src",
-        "ts:check": "tsc --noEmit",
-        "build": "tsup-node",
-        "release": "release-it"
-    },
-    "devDependencies": {
-        "@release-it/conventional-changelog": "^9.0.0",
-        "@types/node": "^22.5.2",
-        "@typescript-eslint/eslint-plugin": "^7.0.0",
-        "@typescript-eslint/parser": "^6.16.0",
-        "eslint": "^8.56.0",
-        "eslint-config-prettier": "^10.0.1",
-        "eslint-config-xo": "^0.45.0",
-        "eslint-config-xo-typescript": "^2.0.0",
-        "eslint-plugin-prettier": "^5.1.2",
-        "prettier": "^3.1.1",
-        "release-it": "^17.0.1",
-        "tsup": "^8.0.1",
-        "typescript": "^5.3.3"
-    },
-    "peerDependencies": {
-        "release-it": "15 - 17"
-    },
-    "engines": {
-        "node": ">=18"
-    }
+	"name": "release-it-webhook",
+	"version": "0.0.5",
+	"description": "Webhook plugin for release-it",
+	"repository": "https://github.com/pchalupa/release-it-webhook",
+	"bugs": {
+		"url": "https://github.com/pchalupa/release-it-webhook/issues"
+	},
+	"keywords": ["release", "release-it", "release-it-plugin", "webhook"],
+	"author": {
+		"name": "Petr Chalupa",
+		"email": "chalupa.petr93@gmail.com",
+		"url": "https://github.com/pchalupa"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/pchalupa/release-it-webhook#readme",
+	"type": "module",
+	"exports": {
+		".": "./index.js",
+		"./package.json": "./package.json"
+	},
+	"files": ["./index.js"],
+	"scripts": {
+		"dev": "tsup-node --watch",
+		"lint": "biome check",
+		"format": "biome format",
+		"ts:check": "tsc --noEmit",
+		"build": "tsup-node",
+		"release": "release-it"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@release-it/conventional-changelog": "^10.0.1",
+		"@types/node": "^22.15.29",
+		"release-it": "^19.0.3",
+		"tsup": "^8.5.0",
+		"typescript": "^5.8.3"
+	},
+	"peerDependencies": {
+		"release-it": ">=19"
+	},
+	"engines": {
+		"node": ">=20"
+	}
 }
