@@ -27,7 +27,7 @@
 		"release": "release-it"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
+		"@biomejs/biome": "2.2.0",
 		"@release-it/conventional-changelog": "^10.0.1",
 		"@types/node": "^24.0.7",
 		"release-it": "^19.0.3",
